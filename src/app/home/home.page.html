@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      AC3 - Tela 1 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="stacked">Temperatura do 1º mês</ion-label>
+    <ion-range min="-5" max="50" [ticks]="true" [snaps]="true" [pin]="true" [(ngModel)]="Temp1"></ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Temperatura do 2º mês</ion-label>
+    <ion-range min="-5" max="50" [ticks]="true" [snaps]="true" [pin]="true" [(ngModel)]="Temp2"></ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Temperatura do 3º mês</ion-label>
+    <ion-range min="-5" max="50" [ticks]="true" [snaps]="true" [pin]="true" [(ngModel)]="Temp3"></ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Temperatura do 4º mês</ion-label>
+    <ion-range min="-5" max="50" [ticks]="true" [snaps]="true" [pin]="true" [(ngModel)]="Temp4"></ion-range>
+  </ion-item>
+
+  <ion-label>{{TempMedia()}}ºC</ion-label>
+  <ion-button (click)="abrirTela()">Ver culturas para cultivar</ion-button>
+    
+</ion-content>

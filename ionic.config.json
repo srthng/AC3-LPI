@@ -1,0 +1,7 @@
+{
+  "name": "AC3",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
